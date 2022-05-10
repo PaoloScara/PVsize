@@ -1,31 +1,3 @@
-
-Skip to content
-Pull requests
-Issues
-Marketplace
-Explore
-@PaoloScara
-ChristopherDavisUCI /
-streamlit_ed
-Public
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-
-    Insights
-
-streamlit_ed/grad_desc.py /
-@ChristopherDavisUCI
-ChristopherDavisUCI Fix resetting of the main slider
-Latest commit 1696c84 on 18 Nov 2021
-History
-1 contributor
-214 lines (152 sloc) 5.96 KB
 from numpy.core.fromnumeric import repeat
 import streamlit as st
 import altair as alt
@@ -146,9 +118,11 @@ st.title("Demonstration of Gradient Descent")
 st.markdown('''Some data is shown below, together with the line of best fit for that data.
 There is a formula for finding that best fit line, but it can be more efficient to find 
 the line instead using the iterative procedure of *gradient descent*.
+
 Our goal is to find coefficients $t_0$, $t_1$
 so that the line $y = t_1 x + t_0$ fits the data as well as possible.  We start with the guess $y = 4$ and
 then gradually update the parameters.
+
 Choices:
 * The number of iterations to perform.
 * The *learning rate*, which controls how much the parameters change with each update.
@@ -237,18 +211,4 @@ st.write('''The chart on the right shows the estimated coefficients so far (in b
 best-fit coefficients (in red).
 ''')
 
-    © 2022 GitHub, Inc.
 
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
-Loading complete
